@@ -1,0 +1,211 @@
+nav.menu{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	position: relative;
+	text-align: center;	
+	border-bottom: 20px solid green; /* borde */
+}
+ nav.menu a{
+	position: relative;
+	display: inline-block;
+	overflow: hidden; /*lo que debería suceder si el contenido desborda el cuadro de un elemento*/
+	color: black;
+	text-decoration: none;
+	padding: 8px 20px;
+	font-family: Calibri, Candara, Segoe;
+	font-size: 18px; 
+	font-weight: bold;
+	border: 1px solid green;
+	border-radius: 15px 15px 0 0 / 12px 12px; 
+	vertical-align: bottom;
+}
+ nav.menu a span{
+	position: relative;
+	z-index: 10;/*varios elementos se superponen, z-order determina cuales cubren a otros*/
+}
+nav.menu a::before{ /* usado para añadir contenido estético al elemento*/
+	content: '';
+	color: white;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: green; /* color de fondo*/
+	left: 0;
+	top: 110%; /*10% extra es para dar cuenta de la dimensión de la sombra*/
+	box-shadow: -2px 2px 10px rgba(255,255,255,.5) inset;
+	border-radius: 15px 15px 0 0 / 12px 12px; /*
+Borde de forma ovalada para las esquinas superior izquierda y superior derecha */
+}
+nav.menu a:hover{
+	color: white; /* color cuando pasas el mouse */
+}
+nav.menu a:hover::before{
+	top: 0; /*para deslizar la pestaña hacia arriba */
+}
+#logo{
+	float:left;
+	display:inline-block;
+	margin: 20px 0px 0px 20px;
+	height:100px;
+}
+#titulo{
+	display:inline-block;
+	margin: 10px 0px 0px 20px;
+	font-size:20px;
+	font-family: Tahoma, Geneva, sans-serif; 
+}	
+header{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	z-index: 100;
+}
+#cabecera{
+	background:#CEF4C8;
+	border-bottom-style: solid;
+}
+.main1{
+	padding-top:200px;
+	padding-left:450px;
+}
+.main2{
+	padding-top:200px;
+	padding-left:230px;
+}
+.main3{
+	padding-top:200px;
+}
+#contenido{
+	font-family: Calibri, Candara, Segoe;
+	position: absolute;
+	display:inline-block;
+	margin: 20px 20px 0px 20px;
+}
+#portada{
+	position: relative;
+	height: 350px; 
+	display:inline;
+	float: left;
+}
+#subtitulo{
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	background: black;
+	font-family: Calibri, Candara, Segoe;
+}
+.fecha{
+	font-style: italic;
+	margin: 0px;
+}
+.texto{
+	font-family: Calibri, Candara, Segoe;	
+	margin: 0px;
+}
+.texto1{
+	font-family: Calibri, Candara, Segoe;	
+	margin: 0px 0px 30px 20px;
+}
+.centrar{
+	font-family: Tahoma, Geneva, sans-serif;	
+	text-align:center;
+}
+#reglas {
+	position: absolute;
+	display:inline-block;
+	margin-right: 30px;
+	font-family: Calibri, Candara, Segoe;
+}
+.mayusc{
+	font-weight: bold;
+	margin-right: 10px;
+}
+.margenes{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.margenes1{
+	margin-left: 40px;
+	margin-top: -20px;
+}
+.bullet{
+	list-style-type: lower-latin;
+}
+.margenes2{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.margenes3{
+	margin-top: 0px;
+	margin-left: 40px;	
+}
+.margenes4{
+	margin-top:-20px;
+	margin-left: 40px;
+}
+.bullet1{
+	list-style-type: square;	
+}
+.subs{	
+	font-style: italic;
+}
+.subs1{	
+	font-style: italic;
+	text-decoration: underline;
+}
+table{
+	margin-top:20px;
+}
+td,th{
+  padding: 0px 80px;
+	vertical-align: middle;
+	text-align:left;
+}	
+#mail{
+	text-align: right;
+}
+.subr{
+	text-decoration: underline;
+}
+#phone{
+	float: left;
+}
+form {
+  margin: 30px 350px 0px 300px;
+	font-family: Calibri, Candara, Segoe;
+}
+label{
+  display: inline-block;
+	margin: 10px 20px 20px 0px;
+}
+.mapas{
+  display: inline-block;
+  vertical-align: top;
+}
+.mapascol{
+	display: inline;
+	margin-left:10px; 	
+}
+#email{
+	margin-top:20px;
+	margin-bottom:0px;
+}
+#parent{
+	margin-top:20px;
+	margin-bottom:0px;
+}
+.adress{
+	margin-bottom:30px; 
+	width: 500px;
+	display: inline-block;
+}	
+fieldset{
+	margin-top:20px;
+	display: inline;
+  border:solid 1px green;
+}
+fieldset label{
+	margin-bottom: 0px;
+}	
